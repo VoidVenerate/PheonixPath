@@ -1,0 +1,176 @@
+.services-main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 8%;
+  background-color: #222222;
+  color: #fff;
+  text-align: center;
+}
+
+.services-main p:first-child {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.services-main h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.services-main > p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ===== SERVICE CARDS GRID ===== */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* ===== INDIVIDUAL CARD ===== */
+.service-cards > div {
+  position: relative;
+  width: 100%;
+  max-width: 552px;
+  height: 373px; /* adjust as needed */
+  padding: 1rem;
+  border-radius: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* vertically center text */
+  justify-content: flex-start; /* text on left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+/* Card hover effect */
+.service-cards > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== CARD BACKGROUND COLORS ===== */
+.service-card-1 { background-color: #FF7F501A; border: 1px solid #FF7F50; }
+.service-card-2 { background-color: #006D771A; border: 1px solid #006D77; }
+.service-card-3 { background-color: #F300511A; border: 1px solid #F30051; }
+.service-card-4 { background-color: #007BFF1A; border: 1px solid #007BFF; }
+
+
+/* ===== CARD TEXT ===== */
+.service-card-text {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  max-width: 53%; /* text takes ~60% of card width */
+}
+
+.service-card-text h2 {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  line-height: 44px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: "Bricolage Grotesque";
+}
+
+.service-card-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: thinner;
+  font-family: "Marcellus";
+  font-style: regular;
+}
+
+/* ===== CARD IMAGE ===== */
+.service-cards img {
+  position: absolute;
+  bottom: -80px;
+  right: -10px;
+  width: 323px;
+  height: 368px;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.service-card-1 img {
+    width: 405px;
+    right: 0;
+}
+.service-card-2 img {
+    height: 532px;
+    right: 0;
+}
+.service-card-3 img {
+    width: 403px;
+    right: 0;
+}
+.service-card-4 img {
+    width: 405px;
+    height: 404px;
+    right: 0;
+}
+
+/* ===== BUTTON ===== */
+.service-cards button {
+  grid-column: span 2;
+  background-color: #006D77;
+  color: white;
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+  justify-self: center;
+}
+
+.service-cards button:hover {
+  background-color: #005f66;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .service-cards button {
+    grid-column: span 1;
+  }
+
+  .services-main h1 {
+    font-size: 2rem;
+  }
+
+  .service-cards > div {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .service-card-text {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .service-cards img {
+    width: 140px;
+    bottom: -10px;
+    right: -10px;
+  }
+}

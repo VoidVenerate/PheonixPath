@@ -1,0 +1,125 @@
+/* ---------------------- */
+/* Navbar Wrapper         */
+/* ---------------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent; /* Always transparent */
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Optional: Add glass effect when scrolling */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ---------------------- */
+/* Logo                   */
+/* ---------------------- */
+.navbar-logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+/* ---------------------- */
+/* Links                  */
+/* ---------------------- */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #bb00ff; /* Purple highlight */
+  text-shadow: 0 0 6px #bb00ff;
+}
+
+/* ---------------------- */
+/* Hamburger (Mobile)     */
+/* ---------------------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+/* Hamburger animation when opened */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ---------------------- */
+/* Responsive Navbar      */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7); /* Dropdown background */
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navbar-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-link {
+    padding: 0.8rem 0;
+  }
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}

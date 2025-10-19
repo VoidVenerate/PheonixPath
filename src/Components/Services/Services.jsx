@@ -1,0 +1,50 @@
+import React from 'react'
+import './Services.css'
+import img1 from '../../assets/Image_fx (6) 1.png'
+import img2 from '../../assets/Image_fx (10) 1.png'
+import img3 from '../../assets/Image_fx (12) 1.png'
+import img4 from '../../assets/Image_fx (14) 1.png'
+
+const Services = () => {
+  return (
+    <div className='services-main'>
+      <p style={{fontFamily:"Caveat"}}>Our Services</p>
+      <h1 style={{fontFamily:"Bricolage Grotesque"}}>Care That Meets You Where You Are.</h1>
+      <p style={{fontFamily:"Manrope"}}>Compassionate mental health support designed for your unique journey.</p>
+      <div className="service-cards">
+        <div className="service-card-1">
+            <img src={img4} />
+            <div className="service-card-text">
+                <h2>Telepsychiatry <br /> (Virtual Appointments)</h2>
+                <p>Receive psychiatric care from home. Our secure platform offers flexible, confidential appointments.</p>
+            </div>
+        </div>
+        <div className="service-card-2">
+            <img src={img1} />
+            <div className="service-card-text">
+                <h2>Medication Management</h2>
+                <p>Safe, effective medication is vital for mental wellness. We monitor and adjust medications to suit your needs with minimal side effects.</p>
+            </div>
+        </div>
+        <div className="service-card-3">
+            <img src={img2} />
+            <div className="service-card-text">
+                <h2>Support Across the Lifespan</h2>
+                <p>From children to older adults, we provide age-appropriate, culturally sensitive care that empowers individuals at every stage of life.</p>
+            </div>  
+        </div>
+        <div className="service-card-4">
+            <img src={img3} />
+            <div className="service-card-text">
+                <h2>Personalized Mental Health Care Plans</h2>
+                <p>Each client's journey is unique. We create tailored care plans with therapy and medication.</p>
+            </div>      
+        </div>
+        <button>Start Your Consultation</button>
+      </div>
+
+    </div>
+  )
+}
+
+export default Services
