@@ -2,7 +2,7 @@
   width: 87%;
   min-height: 650px;
   gap: 4rem;
-  padding: 68px;
+  padding: 68px 96px;
   margin-left: 96px;
   background-color: #222222;
   color: #fff;
@@ -107,7 +107,6 @@
 /* Buttons / links */
 .btn {
   display: inline-block;
-  padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -241,7 +240,7 @@
 /* Hover effect for buttons */
 .contact button, .btn {
   transform: translateY(0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .contact button a {
@@ -249,10 +248,7 @@
     text-decoration: none;
 }
 
-.contact button:hover, .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
+
 /* ========================= */
 /* RESPONSIVE CONTACT STYLES */
 /* ========================= */

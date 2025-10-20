@@ -1,7 +1,7 @@
 .services-main {
   width: 100%;
   min-height: 100vh;
-  padding: 24px 96px 24px 96px;
+  padding: 68px 173px; /* reduced from 96px to bring cards closer to edges */
   background-color: #222222;
   color: #fff;
   text-align: center;
@@ -24,7 +24,7 @@
 .services-main > p {
   font-size: 1rem;
   color: #fff;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -35,30 +35,31 @@
 .service-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem; /* was 2rem — tightened */
   justify-items: center;
+  align-items: start;
 }
 
 /* ===== INDIVIDUAL CARD ===== */
 .service-cards > div {
   position: relative;
   width: 100%;
-  max-width: 552px;
-  height: 373px; /* adjust as needed */
+  max-width: 580px; /* slightly narrower for better alignment */
+  height: 373px;
   padding: 1rem;
-  border-radius: 60px;
+  border-radius: 50px; /* reduced slightly to match tighter spacing */
   overflow: hidden;
   display: flex;
-  align-items: center; /* vertically center text */
-  justify-content: flex-start; /* text on left */
+  align-items: center;
+  justify-content: flex-start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #fff;
 }
 
 /* Card hover effect */
 .service-cards > div:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== CARD BACKGROUND COLORS ===== */
@@ -67,13 +68,12 @@
 .service-card-3 { background-color: #F300511A; border: 1px solid #F30051; }
 .service-card-4 { background-color: #007BFF1A; border: 1px solid #007BFF; }
 
-
 /* ===== CARD TEXT ===== */
 .service-card-text {
   position: relative;
   z-index: 1;
   text-align: left;
-  max-width: 53%; /* text takes ~60% of card width */
+  max-width: 53%;
 }
 
 .service-card-text h2 {
@@ -88,9 +88,7 @@
 .service-card-text p {
   font-size: 14px;
   line-height: 1.6;
-  font-weight: thinner;
   font-family: "Marcellus";
-  font-style: regular;
 }
 
 /* ===== CARD IMAGE ===== */
@@ -104,23 +102,10 @@
   z-index: 0;
 }
 
-.service-card-1 img {
-    width: 405px;
-    right: 0;
-}
-.service-card-2 img {
-    height: 532px;
-    right: 0;
-}
-.service-card-3 img {
-    width: 403px;
-    right: 0;
-}
-.service-card-4 img {
-    width: 405px;
-    height: 404px;
-    right: 0;
-}
+.service-card-1 img { width: 405px; right: 0; }
+.service-card-2 img { height: 532px; right: 0; }
+.service-card-3 img { width: 403px; right: 0; }
+.service-card-4 img { width: 405px; height: 404px; right: 0; }
 
 /* ===== BUTTON ===== */
 .service-cards button {
@@ -138,8 +123,8 @@
 }
 
 .service-cards button a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .service-cards button:hover {
@@ -150,11 +135,12 @@
 @media (max-width: 768px) {
   .services-main {
     padding: 24px;
-    width: 101%;
+    width: 100%;
   }
 
   .service-cards {
     grid-template-columns: 1fr;
+    gap: 1.5rem; /* slightly tighter for mobile */
   }
 
   .service-cards button {
@@ -170,7 +156,6 @@
     height: 410px;
     text-align: left;
     padding: 2rem 1.5rem;
-    position: relative;
     border-radius: 24px;
   }
 
@@ -180,30 +165,18 @@
     z-index: 2;
   }
 
-  /* make the image sit at the bottom, full width */
   .service-cards img {
     position: relative;
     bottom: 0;
     right: 0;
-    left: 20px;
     width: 100%;
     height: auto;
     object-fit: cover;
     margin-top: auto;
     z-index: 1;
   }
-  .service-card-1 img {
-    bottom: -30px;
-  }
-  .service-card-2 img {
-    bottom: 140px;
-    width: 345px;
-  }
-  .service-card-3 img {
-    bottom: 30px;
-    width: 381px;
-    height: 226px;
-    left: 0;
-  }
-}
 
+  .service-card-1 img { bottom: -30px; }
+  .service-card-2 img { bottom: 140px; width: 345px; }
+  .service-card-3 img { bottom: 30px; width: 381px; height: 226px; left: 0; }
+}

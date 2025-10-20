@@ -15,10 +15,10 @@ const Info = () => {
             <div className="img-text">
                 <img src={profilepic} alt="Profile" />
                 <div className="text-section">
-                    <h3>About Our Lead Clinician</h3>
-                    <p>Oluwakemi Okunlola has nearly 20 years of clinical experience caring for children, adolescents, adults, and older adults with various psychiatric conditions. She uses cultural humility, trauma-informed principles, and a person-centered approach that emphasizes trust and recovery.</p>
-                    <p><b>Oluwakemi Okunlola, APRN, PMHNP-BC.</b></p>
-                    <p>CEO, PhoenixPath</p>
+                    <h3>About Our Provider</h3>
+                    <p style={{color:"#909090"}}>Oluwakemi Okunlola has nearly 20 years of clinical experience caring for children, adolescents, adults, and older adults with various psychiatric conditions. She uses cultural humility, trauma-informed principles, and a person-centered approach that emphasizes trust and recovery.</p>
+                    <p><b>Oluwakemi Okunlola,</b></p>
+                    <p style={{color:"#006D77"}}>APRN, PMHNP-BC.</p>
                 </div>
             </div>
         </div>

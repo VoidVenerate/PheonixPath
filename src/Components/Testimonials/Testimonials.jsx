@@ -9,7 +9,7 @@ const Testimonials = () => {
   return (
     <div className='Testimonials' id='reviews-section'>
         <p style={{fontFamily:"Caveat"}}>Reviews</p>
-        <h1 style={{fontFamily:"Bricolage Grotesque"}}>What our Clients say...</h1>
+        <h1 style={{fontFamily:"Bricolage Grotesque", color:"#00373E"}}>What our Clients say...</h1>
         <div className="Testimonial-cards">
             <div className="Testimonial-card">
                 <div className="Testimonial-card-text">
