@@ -134,6 +134,7 @@
   opacity: 0.8;
 }
 
+
 /* ========== Responsive ========== */
 
 /* Tablets */
@@ -143,6 +144,13 @@
     align-items: center;
     padding: 40px 32px;
     width: 101%;
+  }
+  .vertical-line {
+    width: 100%;        /* full width */
+    height: 1px;        /* thin horizontal line */
+    margin: 16px 0;     /* vertical spacing */
+    background-color: #dedede;
+    margin-top: 0px;
   }
 
   .footer-left {
@@ -155,14 +163,11 @@
     border-radius: 20px;
   }
 
-  .vertical-line {
-    display: none;
-  }
-
   .footer-right {
     width: 100%;
     align-items: center;
     gap: 1.2rem;
+    margin-top: -75px;
   }
 
   .footer-right ul {
@@ -255,9 +260,6 @@
     align-items: center;
   }
 
-  .vertical-line {
-    display: none;
-  }
 
   .footer-right ul {
     grid-template-columns: 2fr 1fr;
