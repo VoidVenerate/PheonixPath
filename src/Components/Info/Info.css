@@ -162,23 +162,15 @@
 @media (max-width: 900px) {
   .info-main {
     flex-direction: column;
-    text-align: center;
     padding: 3rem 5%;
   }
   
   .img-text {
     flex-direction: column;
-    align-items: center;
   }
 
   .info-left,
   .info-right {
     padding: 0;
-  }
-
-  .vision-header,
-  .mission-1-header,
-  .mission-2-header {
-    justify-content: center;
   }
 }

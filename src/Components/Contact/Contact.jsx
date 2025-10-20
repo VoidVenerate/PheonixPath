@@ -38,7 +38,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <button>Start Your Consultation</button>
+        <button>Book Your Telehealth Session</button>
     </div>
   )
 }

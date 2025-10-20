@@ -13,32 +13,32 @@ const Services = () => {
       <p style={{fontFamily:"Manrope"}}>Compassionate mental health support designed for your unique journey.</p>
       <div className="service-cards">
         <div className="service-card-1">
-            <img src={img4} />
             <div className="service-card-text">
                 <h2>Telepsychiatry <br /> (Virtual Appointments)</h2>
                 <p>Receive psychiatric care from home. Our secure platform offers flexible, confidential appointments.</p>
             </div>
+            <img src={img4} />
         </div>
         <div className="service-card-2">
-            <img src={img1} />
             <div className="service-card-text">
                 <h2>Medication Management</h2>
                 <p>Safe, effective medication is vital for mental wellness. We monitor and adjust medications to suit your needs with minimal side effects.</p>
             </div>
+            <img src={img1} />
         </div>
         <div className="service-card-3">
-            <img src={img2} />
             <div className="service-card-text">
                 <h2>Support Across the Lifespan</h2>
                 <p>From children to older adults, we provide age-appropriate, culturally sensitive care that empowers individuals at every stage of life.</p>
             </div>  
+            <img src={img2} />
         </div>
         <div className="service-card-4">
-            <img src={img3} />
             <div className="service-card-text">
                 <h2>Personalized Mental Health Care Plans</h2>
                 <p>Each client's journey is unique. We create tailored care plans with therapy and medication.</p>
-            </div>      
+            </div>     
+            <img src={img3} /> 
         </div>
         <button>Start Your Consultation</button>
       </div>

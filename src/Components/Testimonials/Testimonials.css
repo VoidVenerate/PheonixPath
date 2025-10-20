@@ -108,6 +108,9 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
+  .Testimonials{
+    padding: 24px;
+  }
   .Testimonial-cards {
     grid-template-columns: 1fr; /* stacked on smaller screens */
   }

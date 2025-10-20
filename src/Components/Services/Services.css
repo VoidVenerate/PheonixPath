@@ -143,6 +143,10 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  .services-main {
+    padding: 24px;
+  }
+
   .service-cards {
     grid-template-columns: 1fr;
   }
@@ -157,20 +161,43 @@
 
   .service-cards > div {
     flex-direction: column;
-    height: auto;
-    text-align: center;
+    height: 410px;
+    text-align: left;
     padding: 2rem 1.5rem;
+    position: relative;
+    border-radius: 24px;
   }
 
   .service-card-text {
     max-width: 100%;
     margin-bottom: 1rem;
-    text-align: center;
+    z-index: 2;
   }
 
+  /* make the image sit at the bottom, full width */
   .service-cards img {
-    width: 140px;
-    bottom: -10px;
-    right: -10px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: auto;
+    z-index: 1;
+  }
+  .service-card-1 img {
+    bottom: -30px;
+  }
+  .service-card-2 img {
+    bottom: 140px;
+    width: 345px;
+  }
+  .service-card-3 img {
+    bottom: 30px;
+    width: 381px;
+    height: 226px;
+    left: 0;
   }
 }
+
