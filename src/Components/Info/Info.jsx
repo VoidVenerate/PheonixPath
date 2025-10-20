@@ -10,7 +10,7 @@ const Info = () => {
     <div className='info-main' id='info-section'>
         <div className="info-left">
             <p style={{fontFamily:"Caveat"}}>Who we are</p>
-            <h1>Transforming Lives Through Care</h1>
+            <h1 style={{fontFamily:"Bricolage Grotesque"}}>Transforming Lives <br /> Through Care</h1>
             <p>At PhoenixPath, we believe healing is a journey. Our compassionate team helps individuals rediscover balance and resilience through personalized evidence-based mental health care.</p>
             <div className="img-text">
                 <img src={profilepic} alt="Profile" />

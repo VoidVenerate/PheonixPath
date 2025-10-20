@@ -4,8 +4,8 @@ import phone from '../../assets/phone.png'
 import chat from '../../assets/chat.png'
 
 const Contact = () => {
-    const email = "info@phoenixpathwellness.com";
-    const phoneNumber = "+44 254-421-0420";
+    const email = "micohuge@yahoo.com";
+    const phoneNumber = "+1 254-421-0420";
   return (
     <div className='contact' id='contact-section'>
         <p style={{fontFamily:"Caveat"}}>Get in Touch</p>

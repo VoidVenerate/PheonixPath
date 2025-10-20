@@ -8,7 +8,7 @@ const Conditions = () => {
     <div className='conditions' id='conditions-section'>
         <div className="conditions-content">
             <div className="conditions-left">
-                <h1>Conditions we treat ?</h1>
+                <h1 style={{fontFamily:"Bricolage Grotesque"}}>Conditions we treat ?</h1>
                 <div className="condition-cards">
                     <div className="condition-card">
                         <p>Emotional Disorders</p>
@@ -16,14 +16,6 @@ const Conditions = () => {
                             <li><img src={Check} alt="Check icon" />Depression</li>
                             <li><img src={Check} alt="Check icon" />Bipolar Disorder</li>
                             <li><img src={Check} alt="Check icon" />Grief & Adjustment Disorders</li>
-                        </ul>
-                    </div>
-                    <div className="condition-card">
-                        <p>Lifestyle Disorders</p>
-                        <ul>
-                            <li><img src={Check} alt="Check icon" />Insomnia</li>
-                            <li><img src={Check} alt="Check icon" />Sleep Problems</li>
-                            <li><img src={Check} alt="Check icon" />Stress-Related Fatigue</li>
                         </ul>
                     </div>
                     <div className="condition-card">
