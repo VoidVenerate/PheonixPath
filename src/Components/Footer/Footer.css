@@ -67,15 +67,7 @@
 }
 
 /* Links */
-.footer-right ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  width: 95%;
-}
+
 .footer-right ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,7 +75,7 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
 .footer-right ul li {
