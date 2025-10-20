@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-left">
             <img src={Footerimg} />
         </div>
-        <div class="vertical-line"></div>
+        <div className="vertical-line"></div>
         <div className="footer-right">
             <div className="footer-right-header">
                 <img src={Maskgroup} alt="" />

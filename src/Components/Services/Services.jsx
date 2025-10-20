@@ -7,7 +7,7 @@ import img4 from '../../assets/Image_fx (14) 1.png'
 
 const Services = () => {
   return (
-    <div className='services-main'>
+    <div className='services-main' id='services-section'>
       <p style={{fontFamily:"Caveat"}}>Our Services</p>
       <h1 style={{fontFamily:"Bricolage Grotesque"}}>Care That Meets You Where You Are.</h1>
       <p style={{fontFamily:"Manrope"}}>Compassionate mental health support designed for your unique journey.</p>

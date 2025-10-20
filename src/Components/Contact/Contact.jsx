@@ -7,7 +7,7 @@ const Contact = () => {
     const email = "info@phoenixpathwellness.com";
     const phoneNumber = "+44 254-421-0420";
   return (
-    <div className='contact'>
+    <div className='contact' id='contact-section'>
         <p style={{fontFamily:"Caveat"}}>Get in Touch</p>
         <h1 style={{fontFamily:"Bricolage Grotesque"}}>You Don’t Have to Go Through This Alone</h1>
         <p>Our friendly team would love to hear from you.</p>

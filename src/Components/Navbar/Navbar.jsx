@@ -1,9 +1,8 @@
-import React from 'react'
-import './Navbar.css'
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import Maskgroup from '../../assets/Maskgroup.png'
-import { Phone, Mail } from 'lucide-react'
+import React, { useState } from 'react';
+import './Navbar.css';
+import Maskgroup from '../../assets/Maskgroup.png';
+import { Phone, Mail } from 'lucide-react';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,14 +18,12 @@ const Navbar = () => {
       return newState;
     });
   };
-  
+
   return (
     <nav className="navbar">
       <div className="navbar-header">
         <div className="navbar-logo">
-          <NavLink to='/home'>
-            <img src={Maskgroup} alt="PheonixPath logo" />
-          </NavLink>
+          <img src={Maskgroup} alt="PhoenixPath logo" />
         </div>
 
         <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -36,70 +33,100 @@ const Navbar = () => {
         </div>
       </div>
 
-
-
       <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
         <li>
-          <NavLink
-            to="/home"
-            className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
+          <ScrollLink
+            to="home-section"
+            smooth={true}
+            duration={500}
             onClick={() => setMenuOpen(false)}
+            className="navbar-link"
           >
             Home
-          </NavLink>
+          </ScrollLink>
         </li>
         <li>
-          <NavLink
-            to="/world"
-            className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
+          <ScrollLink
+            to="services-section"
+            smooth={true}
+            duration={500}
             onClick={() => setMenuOpen(false)}
+            className="navbar-link"
           >
             Services
-          </NavLink>
+          </ScrollLink>
         </li>
         <li>
-          <NavLink
-            to="/nation"
-            className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
+          <ScrollLink
+            to="reviews-section"
+            smooth={true}
+            duration={500}
             onClick={() => setMenuOpen(false)}
+            className="navbar-link"
           >
             Reviews
-          </NavLink>
+          </ScrollLink>
         </li>
         <li>
-          <NavLink
-            to="/health"
-            className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
+          <ScrollLink
+            to="contact-section"
+            smooth={true}
+            duration={500}
             onClick={() => setMenuOpen(false)}
+            className="navbar-link"
           >
             Contact Us
-          </NavLink>
+          </ScrollLink>
         </li>
+
         <div className="vert-line"></div>
+
+        {/* Phone link */}
         <li>
-          <NavLink
-            to="/health"
-            className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
-            onClick={() => setMenuOpen(false)}
-            style={{background: 'rgba(255, 255, 255, 0.3)', width: "40px", height: "40px", border:"1px solid white", borderRadius:"50%", display:"flex", justifyContent:"center", alignItems:"center", paddingLeft:'8px'}}
+          <a
+            href="tel:+442544210420"
+            className="icon-link"
+            style={{
+              background: 'rgba(255, 255, 255, 0.3)',
+              width: "40px",
+              height: "40px",
+              border: "1px solid white",
+              borderRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color:"white"
+            }}
           >
-            <Phone size={16} style={{ marginRight: '8px' }} />
-          </NavLink>
+            <Phone size={16} />
+          </a>
         </li>
+
+        {/* Gmail link */}
         <li>
-          <NavLink
-            to="/health"
-            className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
-            onClick={() => setMenuOpen(false)}
-            style={{background: 'rgba(255, 255, 255, 0.3)', width: "40px", height: "40px", border:"1px solid white", borderRadius:"50%", display:"flex", justifyContent:"center", alignItems:"center", paddingLeft:'6px'}}
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=info@phoenixpathwellness.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-link"
+            style={{
+              background: 'rgba(255, 255, 255, 0.3)',
+              width: "40px",
+              height: "40px",
+              border: "1px solid white",
+              borderRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color:"white"
+            }}
           >
-            <Mail size={16} style={{ marginRight: '8px' }} />
-          </NavLink>
+            <Mail size={16} />
+          </a>
         </li>
       </ul>
-      
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
