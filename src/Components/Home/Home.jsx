@@ -1,52 +1,53 @@
 import React, { useState } from 'react';
 import './Home.css';
+import Navbar from '../../Components/Navbar/Navbar';
 import core from '../../assets/core.png';
 import Maskgroup from '../../assets/Maskgroup.png';
 import { ChevronsDown } from 'lucide-react';
-import {Link as ScrollLink} from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
 
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
 
   return (
-    <div 
-      className="home" 
-      onMouseEnter={() => setShowButton(true)} 
-      onMouseLeave={() => setShowButton(false)}
-    >
-      <div className="main-text">
-        <p className='colored-text'>PhoenixPath Mental Health Services</p>
-        <h1>Your Path to Mental Wellness Starts Here</h1>
-        <hr />
-        <p>Compassionate, evidence-based telepsychiatry and counseling for ages 6+ — personalized care that meets you where you are.</p>
-        <button>Schedule a Consultation</button>
+    <div className='home-container'>
+      {/* Navbar at the top */}
+      <Navbar />
+
+      <div 
+        className="home" 
+        onMouseEnter={() => setShowButton(true)} 
+        onMouseLeave={() => setShowButton(false)}
+      >
+        <div className="main-text">
+          <p className='colored-text'>PhoenixPath Mental Health Services</p>
+          <h1>Your Path to Mental Wellness Starts Here</h1>
+          <hr />
+          <p>Compassionate, evidence-based telepsychiatry and counseling for ages 6+ — personalized care that meets you where you are.</p>
+          <button>Schedule a Consultation</button>
+        </div>
+
+        <ScrollLink to="services-section" smooth={true} duration={500}>
+          <div className={`hidden-button ${showButton ? "show" : ""}`}>
+            <img src={core} alt="Core" className="core-image" />
+            <div className="hidden-button-content">
+              <div className="hidden-button-header">
+                <h3>Core Services</h3>
+                <img src={Maskgroup} alt="Maskgroup" />
+              </div>
+              <div className="hidden-button-text">
+                <div className="hidden-btn-txt"><p>Telepsychiatry</p><span></span></div>
+                <div className="hidden-btn-txt"><p>Medication Management</p><span></span></div>
+              </div>
+              <div className="view-more">
+                <p style={{fontFamily:"Caveat", textAlign:"center", color:"#FFFFFF80", textDecoration:"none", display: "flex", alignItems: "center", gap: "4px", justifyContent:"center"}}>
+                  View More <ChevronsDown size={16}/>
+                </p>
+              </div>
+            </div>
+          </div> 
+        </ScrollLink>
       </div>
-      <ScrollLink
-                  to="services-section"
-                  smooth={true}
-                  duration={500}
-                >
-                   <div className={`hidden-button ${showButton ? "show" : ""}`}>
-                        <img src={core} alt="Core" className="core-image" />
-                            <div className="hidden-button-content">
-                                <div className="hidden-button-header">
-                                <h3>Core Services</h3>
-                                <img src={Maskgroup} alt="Maskgroup" />
-                                </div>
-                                <div className="hidden-button-text">
-                                <div className="hidden-btn-txt">
-                                    <p>Telepsychiatry</p><span></span>
-                                </div>
-                                <div className="hidden-btn-txt">
-                                    <p>Medication Management</p><span></span>
-                                </div>
-                                </div>
-                                <div className="view-more">
-                                <p style={{fontFamily:"Caveat", textAlign:"center", color:"#FFFFFF80", textDecoration:"none", display: "flex", alignItems: "center",gap: "4px",justifyContent:"center"}}>View More <ChevronsDown size={16}/></p>
-                                </div>
-                            </div>
-                    </div> 
-      </ScrollLink>
     </div>
   )
 }

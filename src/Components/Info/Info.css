@@ -163,6 +163,7 @@
   .info-main {
     flex-direction: column;
     padding: 3rem 5%;
+    width: 101%;
   }
   
   .img-text {

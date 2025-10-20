@@ -153,6 +153,7 @@
     align-items: center;
     padding: 0px;
     gap: 2rem;
+    width: 101%;
   }
 
   .footer-left {
@@ -182,6 +183,15 @@
     justify-content: space-between;
     text-align: left;
     width: 100%;
+    padding: 24px;
+  }
+  .footer-right ul li:nth-child(odd) {
+    text-align: left;
+  }
+
+  /* Target the right column */
+  .footer-right ul li:nth-child(even) {
+    text-align: right;
   }
 
   .footer-right p {
@@ -197,7 +207,7 @@
 
   .footer-left img {
     width: 100%;
-    max-width: 450px;
+    max-width: 2000px;
   }
 
   .footer-right ul {
@@ -227,7 +237,7 @@
   }
 
   .footer-left img {
-    width: 100%;
+    width: 101%;
     height: auto;
   }
 
@@ -254,8 +264,10 @@
   }
 
   .footer-icons {
-    justify-content: center;
+    justify-content: space-between;
     gap: 0.8rem;
+    width: 100%;
+    padding: 24px;
   }
 
   .footer-icons img {

@@ -118,6 +118,7 @@
 @media (max-width: 1024px) {
     .conditions{
         padding: 24px;
+        width: 101%;
     }
   .conditions-content {
     flex-direction: column;
@@ -126,10 +127,15 @@
   }
 
   .condition-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 2fr;
   }
 
   .conditions-right img {
     margin-top: 2rem;
   }
+}
+@media (max-width: 768px) {
+    .condition-cards {
+        grid-template-columns: 1fr;
+    }
 }
