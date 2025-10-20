@@ -1,8 +1,8 @@
 .contact {
   width: 87%;
-  min-height: 650px;
+  min-height: 605px;
   gap: 4rem;
-  padding: 68px 96px;
+  padding: 44px 68px;
   margin-left: 96px;
   background-color: #222222;
   color: #fff;
@@ -36,11 +36,14 @@
 }
 
 /* Cards container */
+/* Cards container — use grid for better control */
 .contact-cards {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
 }
 
 /* Individual contact card */
@@ -139,10 +142,16 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 68px;
+    margin-top: 24px;
 }
 
 /* Responsive */
+@media (min-width: 1024px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .contact-cards {
     flex-direction: column;
@@ -162,9 +171,9 @@
 }
 .contact {
   width: 87%;
-  min-height: 688px;
+  min-height: 600px;
   gap: 4rem;
-  padding: 68px;
+  padding: 44px 68px;
   margin-left: 96px;
   color: #fff;
   border-radius: 60px;

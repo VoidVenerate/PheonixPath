@@ -217,3 +217,31 @@
     padding: 8px;
   }
 }
+@media (max-width: 1350px) and (min-width: 901px) {
+  .img-text {
+    max-width: 100%;
+    height: auto; /* allow the height to adjust naturally */
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .img-text img {
+    width: min(200px, 40%);
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .text-section {
+    flex: 1;
+    padding: 12px 0;
+  }
+
+  .text-section h3 {
+    font-size: 1rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+  }
+}
