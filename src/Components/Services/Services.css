@@ -137,6 +137,11 @@
   justify-self: center;
 }
 
+.service-cards button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .service-cards button:hover {
   background-color: #005f66;
 }

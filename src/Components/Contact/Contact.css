@@ -244,6 +244,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.contact button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .contact button:hover, .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);

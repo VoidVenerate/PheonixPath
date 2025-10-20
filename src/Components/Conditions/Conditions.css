@@ -109,6 +109,11 @@
   transition: background-color 0.3s ease;
 }
 
+.conditions button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .conditions button:hover {
   background-color: #005f63;
 }
