@@ -122,12 +122,9 @@
     max-width: 100%;
   }
 
-  .Testimonial-card-footer {
-    justify-content: center; /* center footer on mobile */
-  }
 
   .Testimonial-card-text {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 }

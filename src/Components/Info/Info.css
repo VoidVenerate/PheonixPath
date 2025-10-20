@@ -204,9 +204,14 @@
     width: 100%;
     height: 400px;
   }
+  .vision-statement, .our-mission-header {
+    padding: 8px;
+    border-radius: 12px;
+}
 
   .text-section {
     gap: 8px;
     text-align: left;
+    padding: 8px;
   }
 }
