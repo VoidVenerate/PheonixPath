@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
-import phone from '../../Assets/phone.png'
-import chat from '../../Assets/chat.png'
+import phone from '../../assets/phone.png'
+import chat from '../../assets/chat.png'
 
 const Contact = () => {
     const email = "info@phoenixpathwellness.com";
