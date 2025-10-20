@@ -32,7 +32,7 @@
 /* Divider */
 .vertical-line {
   width: 1px;
-  height: 71vh;
+  height: 435px;
   background-color: #dedede;
   margin: 0 20px;
 }
@@ -74,12 +74,12 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  width: 80%;
+  width: 95%;
 }
 .footer-right ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem 1rem;
+  gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0 auto;

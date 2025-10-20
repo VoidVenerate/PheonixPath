@@ -3,7 +3,7 @@
 --------------------------------*/
 .info-main {
   width: 100%;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -69,6 +69,7 @@
   height: 270px;
   box-sizing: border-box;
   overflow: hidden;
+  margin-top: 70px;
 }
 
 .img-text img {
@@ -198,6 +199,7 @@
     flex-direction: column;
     height: auto;
     align-items: center;
+    margin-top: 24px;
   }
 
   .img-text img {
