@@ -24,21 +24,17 @@ const Footer = () => {
             <ul>
                 <li><ScrollLink to='home-section' smooth={true} duration={500} >Home</ScrollLink></li>
                  <li>Instagram</li>
-                <li><ScrollLink to='info-section' smooth={true} duration={500} >About Us</ScrollLink></li>
-                <li>Facebook</li>
                 <li><ScrollLink to='services-section' smooth={true} duration={500} >Services</ScrollLink></li>
-                <li>X</li>
+                <li>Facebook</li>
                 <li><ScrollLink to='conditions-section' smooth={true} duration={500} >Conditions Treated</ScrollLink></li>
-                <li>Youtube</li>
-                <li><ScrollLink to='reviews-section' smooth={true} duration={500} >Reviews</ScrollLink></li>
-                <li>LinkedIn</li>
+                <li>X</li>
                 <li><ScrollLink to='contact-section' smooth={true} duration={500} >Contact</ScrollLink></li>
+                <li>LinkedIn</li>
             </ul>
             <div className="footer-icons">
                 <img src={ig} alt="" />
                 <img src={fb} alt="" />
                 <img src={x} alt="" />
-                <img src={yt} alt="" />
                 <img src={ln} alt="" />
             </div>
             <p style={{textAlign:"center"}}> &copy; {new Date().getFullYear()}PhoenixPath Wellness </p>

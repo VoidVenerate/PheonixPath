@@ -142,6 +142,7 @@
     flex-direction: column;
     align-items: center;
     padding: 40px 32px;
+    width: 101%;
   }
 
   .footer-left {

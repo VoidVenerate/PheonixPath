@@ -135,7 +135,7 @@
 @media (max-width: 768px) {
   .services-main {
     padding: 24px;
-    width: 100%;
+    width: 101%;
   }
 
   .service-cards {

@@ -183,6 +183,7 @@
   .info-main {
     flex-direction: column;
     padding: 2rem 5%;
+    width: 101%;
   }
 
   .info-left,
