@@ -7,7 +7,7 @@ import Maskgroup from '../../assets/Maskgroup.png'
 
 const Info = () => {
   return (
-    <div className='info-main'>
+    <div className='info-main' id='info-section'>
         <div className="info-left">
             <p style={{fontFamily:"Caveat"}}>Who we are</p>
             <h1>Transforming Lives Through Care</h1>

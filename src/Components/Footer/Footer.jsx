@@ -7,6 +7,7 @@ import fb from '../../assets/Social icon (1).png'
 import x from '../../assets/Social icon (2).png'
 import yt from '../../assets/Social icon (3).png'
 import ln from '../../assets/Social icon (4).png'
+import { Link as ScrollLink } from 'react-scroll'
 
 const Footer = () => {
   return (
@@ -21,17 +22,17 @@ const Footer = () => {
                 <p>PhoenixPath Mental Health </p>
             </div>
             <ul>
-                <li>Home</li>
+                <li><ScrollLink to='home-section' smooth={true} duration={500} >Home</ScrollLink></li>
                  <li>Instagram</li>
-                <li>About Us</li>
+                <li><ScrollLink to='info-section' smooth={true} duration={500} >About Us</ScrollLink></li>
                 <li>Facebook</li>
-                <li>Services</li>
+                <li><ScrollLink to='services-section' smooth={true} duration={500} >Services</ScrollLink></li>
                 <li>X</li>
-                <li>Conditions Treated</li>
+                <li><ScrollLink to='conditions-section' smooth={true} duration={500} >Conditions Treated</ScrollLink></li>
                 <li>Youtube</li>
-                <li>Reviews</li>
+                <li><ScrollLink to='reviews-section' smooth={true} duration={500} >Reviews</ScrollLink></li>
                 <li>LinkedIn</li>
-                <li>Contact</li>
+                <li><ScrollLink to='contact-section' smooth={true} duration={500} >Contact</ScrollLink></li>
             </ul>
             <div className="footer-icons">
                 <img src={ig} alt="" />

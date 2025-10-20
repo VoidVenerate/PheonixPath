@@ -10,7 +10,7 @@ const Home = () => {
   const [showButton, setShowButton] = useState(false);
 
   return (
-    <div className='home-container'>
+    <div className='home-container' id='home-section'>
       {/* Navbar at the top */}
       <Navbar />
 

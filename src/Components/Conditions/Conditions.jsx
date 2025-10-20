@@ -5,7 +5,7 @@ import Check from '../../assets/check.png'
 
 const Conditions = () => {
   return (
-    <div className='conditions'>
+    <div className='conditions' id='conditions-section'>
         <div className="conditions-content">
             <div className="conditions-left">
                 <h1>Conditions we treat ?</h1>
