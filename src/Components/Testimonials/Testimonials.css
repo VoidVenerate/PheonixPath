@@ -1,0 +1,127 @@
+.Testimonials {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px 96px 24px 96px;
+  background-color: #F8F8F8;
+  color: #333;
+}
+
+.Testimonials p:first-child {
+  color: #3DAA74;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.Testimonials h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+/* Grid for testimonial cards */
+.Testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Individual testimonial card */
+.Testimonial-card {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column; /* Column: testimonial text on top, footer below */
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Quote text section */
+.Testimonial-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* left-align text */
+  margin-bottom: 1.5rem;
+  text-align: left;
+  padding: 2rem;
+}
+
+.Testimonial-card-text img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.Testimonial-card-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer section: image + client info side by side */
+.Testimonial-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #006D771A;
+  width: 100%;
+  padding: 2rem;
+  height: 108px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Testimonial-card-footer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column; /* name and position stacked */
+  text-align: left;
+}
+
+.client-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.client-info p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .Testimonial-cards {
+    grid-template-columns: 1fr; /* stacked on smaller screens */
+  }
+
+  .Testimonial-card {
+    max-width: 100%;
+  }
+
+  .Testimonial-card-footer {
+    justify-content: center; /* center footer on mobile */
+  }
+
+  .Testimonial-card-text {
+    align-items: center;
+    text-align: center;
+  }
+}

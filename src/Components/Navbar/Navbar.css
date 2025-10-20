@@ -7,7 +7,7 @@
   justify-content: space-between;
   background: transparent; /* Always transparent */
   color: #ffffff;
-  padding: 0.8rem 1.5rem;
+  padding: 24px 96px 24px 96px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -51,8 +51,14 @@
 
 .navbar-link:hover,
 .navbar-link.active {
-  color: #bb00ff; /* Purple highlight */
-  text-shadow: 0 0 6px #bb00ff;
+  color: #ffffffab; /* Purple highlight */
+  text-shadow: 0 0 6px #ffffffbc;
+}
+.vert-line {
+  width: 1px;        /* line thickness */
+  height: 35px;      /* line height */
+  background-color: #fff; /* line color */
+  margin: 0 10px;    /* spacing around the line */
 }
 
 /* ---------------------- */

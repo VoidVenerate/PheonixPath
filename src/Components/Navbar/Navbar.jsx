@@ -75,9 +75,7 @@ const Navbar = () => {
             Contact Us
           </NavLink>
         </li>
-        <li style={{fontSize: '20px', fontWeight: '600', marginLeft: '10px', marginTop: '-6px'}}>
-          |
-        </li>
+        <div className="vert-line"></div>
         <li>
           <NavLink
             to="/health"

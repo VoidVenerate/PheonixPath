@@ -1,0 +1,132 @@
+.conditions {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px 96px 24px 96px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #006D771A;
+  color: #00373E;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Top content: left + right side */
+.conditions-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Left Section */
+.conditions-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.conditions-left h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.condition-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.condition-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.condition-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.condition-card p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.condition-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.condition-card li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.condition-card li img {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+/* Right Section */
+.conditions-right {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conditions-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button styling */
+.conditions button {
+  background-color: #006D77;
+  color: white;
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2rem;
+
+  display: block;      /* ensures it behaves like a block */
+  margin-left: auto;   /* centers horizontally */
+  margin-right: auto;  /* centers horizontally */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.conditions button:hover {
+  background-color: #005f63;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .conditions-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .condition-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .conditions-right img {
+    margin-top: 2rem;
+  }
+}

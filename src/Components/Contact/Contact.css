@@ -1,0 +1,250 @@
+.contact {
+  width: 87%;
+  min-height: 650px;
+  gap: 4rem;
+  padding: 68px;
+  margin-left: 96px;
+  background-color: #222222;
+  color: #fff;
+  border-radius: 60px;
+  margin-top: 44px;
+  text-align: center;
+}
+
+.contact p:first-child {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact > p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Cards container */
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual contact card */
+.contact-card {
+  background-color: #FFFFFF1A;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #FFFFFF33;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Icon styling */
+/* Wrapper for icon background */
+.contact-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: #006D77; /* teal background */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Actual icon */
+.contact-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+/* Text content */
+.contact-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-card-text p:first-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card-text p:nth-child(2) {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* Buttons / links */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.email-btn {
+  color: #006D77; /* Gmail red */
+}
+
+.email-btn:hover {
+  color: #005B66;
+}
+
+.phone-btn {
+  color: #006D77; /* Teal */
+}
+
+.phone-btn:hover {
+  color: #005B66;
+}
+.contact button {
+    background-color: #006D77;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 68px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-card-text {
+    align-items: center;
+  }
+}
+.contact {
+  width: 87%;
+  min-height: 688px;
+  gap: 4rem;
+  padding: 68px;
+  margin-left: 96px;
+  color: #fff;
+  border-radius: 60px;
+  margin-top: 44px;
+  text-align: center;
+
+  /* Dark animated gradient background */
+  background: linear-gradient(-45deg, #222222, #2a2a2a, #1c1c1c, #333333);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+  /* Fade-in animation */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards, gradientBG 15s ease infinite;
+}
+
+/* Gradient keyframes */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Fade-in & slide up for the section */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate cards individually with slight delay */
+.contact-cards .contact-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: cardFadeIn 0.8s ease forwards;
+  animation-delay: 0.3s; /* first card delay */
+}
+
+.contact-cards .contact-card:nth-child(2) {
+  animation-delay: 0.5s; /* second card delay */
+}
+
+/* Keyframes for cards */
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect for section */
+.contact:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.contact button, .btn {
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact button:hover, .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}

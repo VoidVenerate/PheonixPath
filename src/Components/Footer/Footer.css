@@ -1,0 +1,144 @@
+.Footer{
+  width: 100%;
+  min-height: 70vh;
+  padding: 24px 96px 24px 96px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #fff;
+  color: #00373E;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Left section: occupies more space */
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 825px;
+}
+
+.footer-left img {
+  max-width: 100%;
+  height: 420px;
+}
+.vertical-line {
+  width: 1px;        /* line thickness */
+  height: 60vh;      /* line height */
+  background-color: #333; /* line color */
+  margin: 0 10px;    /* spacing around the line */
+}
+
+/* Right section: smaller */
+.footer-right {
+  flex: 1; /* smaller space */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Manrope";
+}
+
+/* Right section header: logo + title inline */
+.footer-right-header {
+  display: flex;
+  align-items: center; /* vertically center the text with the image */
+  gap: 0.5rem; /* spacing between image and text */
+}
+
+.footer-right-header img {
+  width: 24px; /* logo size */
+  height: 24px;
+  margin-top: 16px;
+}
+
+.footer-right-header p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0; /* remove default margin */
+  white-space: nowrap; /* prevent text wrapping */
+  text-transform: uppercase;
+  color: #FF7F50;
+}
+
+
+.footer-right img:first-child {
+  max-width: 24px; /* Maskgroup logo */
+  margin-bottom: 1rem;
+}
+
+.footer-right p:first-of-type {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Two-column list */
+.footer-right ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 0.5rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.footer-right ul li:hover {
+  color: #3DAA74;
+}
+
+/* Social icons row */
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Copyright text */
+.footer-right p:last-of-type {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .Footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .footer-left {
+    flex: unset;
+    margin-bottom: 2rem;
+  }
+
+  .footer-right ul {
+    grid-template-columns: 1fr; /* stack list on smaller screens */
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}
