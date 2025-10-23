@@ -1,9 +1,7 @@
 .conditions {
   width: 100%;
   min-height: 76vh;
-  padding: 68px 96px 24px 96px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 44px 96px 24px 96px;
   gap: 2rem;
   background-color: #006D771A;
   color: #00373E;
@@ -33,28 +31,16 @@
   margin-bottom: 2rem;
 }
 
+/* Changed from grid to flex */
 .condition-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
+/* This part keeps your list clean and styled */
 .condition-card {
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.condition-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-.condition-card p {
-  font-weight: 600;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  flex: 1 1 100%; /* by default takes full width — adjust below in media query */
 }
 
 .condition-card ul {
@@ -89,7 +75,7 @@
 
 .conditions-right img {
   max-width: 100%;
-  height: 340px;
+  height: 375px;
 }
 
 /* Button styling */
@@ -103,16 +89,19 @@
   cursor: pointer;
   margin-top: 2rem;
 
-  display: block;      /* ensures it behaves like a block */
-  margin-left: auto;   /* centers horizontally */
-  margin-right: auto;  /* centers horizontally */
+  /* Center it under everything */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center; /* works with flex parent */
   text-align: center;
+
   transition: background-color 0.3s ease;
 }
 
 .conditions button a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .conditions button:hover {
@@ -122,21 +111,24 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-    .conditions{
-        padding: 24px;
-        width: 101%;
-    }
+  .conditions {
+    padding: 24px;
+    width: 101%;
+  }
+
   .conditions-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .conditions-left h1 {
     font-size: 24px;
   }
 
   .condition-cards {
-    grid-template-columns: 2fr 2fr;
+    flex-direction: column;
+    align-items: center;
   }
 
   .conditions-right img {
@@ -146,8 +138,9 @@
     object-fit: cover;
   }
 }
+
 @media (max-width: 768px) {
-    .condition-cards {
-        grid-template-columns: 1fr;
-    }
+  .condition-card {
+    flex: 1 1 100%;
+  }
 }

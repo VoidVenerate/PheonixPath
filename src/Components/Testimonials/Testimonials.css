@@ -39,6 +39,7 @@
   flex-direction: column; /* Column: testimonial text on top, footer below */
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #006D7780;
 }
 
 .Testimonial-card:hover {
@@ -78,6 +79,7 @@
   height: 108px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-top: 2px solid #006D7780;
 }
 
 .Testimonial-card-footer img {

@@ -11,7 +11,7 @@ const Navbar = () => {
   const navLinks = [
     { to: 'home-section', label: 'Home' },
     { to: 'services-section', label: 'Services' },
-    { to: 'conditions-section', label: 'Conditions' },
+    { to: 'conditions-section', label: 'Conditions Treated' },
     { to: 'contact-section', label: 'Contact Us' },
   ];
 
