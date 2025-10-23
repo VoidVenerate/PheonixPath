@@ -56,6 +56,7 @@
   font-size: 0.95rem;
   line-height: 1.4;
   text-align: left;
+  padding-top: 8px;
 }
 
 .condition-card li img {
@@ -75,7 +76,7 @@
 
 .conditions-right img {
   max-width: 100%;
-  height: 375px;
+  height: 445px;
 }
 
 /* Button styling */
