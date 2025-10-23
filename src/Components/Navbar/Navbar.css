@@ -3,7 +3,7 @@
 /* ================================== */
 .navbar-normal {
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 24px 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;

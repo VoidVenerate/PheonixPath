@@ -17,8 +17,8 @@
 .main-text {
   text-align: left;
   color: white;
-  max-width: 500px;
-  padding-left: 36px;
+  max-width: 450px;
+  padding-left: 0px;
   line-height: 1.4;
 }
 .main-text .big-txt {

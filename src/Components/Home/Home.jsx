@@ -21,7 +21,7 @@ const Home = () => {
       >
         <div className="main-text">
           <p className='colored-text'>PhoenixPath Mental Health Services</p>
-          <p className='big-txt'>Your Path to Mental Wellness Starts Here</p>
+          <p className='big-txt'>Your Path to Mental Wellness <br /> Starts Here</p>
           <hr />
           <p>Compassionate, evidence-based telepsychiatry and counseling for ages 6+ — personalized care that meets you where you are.</p>
           <button><a href="https://care.headway.co/providers/oluwakemi-okunlola?utm_source=pem&utm_medium=direct_link&utm_campaign=168640" target="_blank" rel="noopener noreferrer">Schedule a Consultation</a></button>
