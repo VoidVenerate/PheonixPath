@@ -11,27 +11,21 @@ const Conditions = () => {
                 <h1 style={{fontFamily:"Bricolage Grotesque"}}>Conditions we treat ?</h1>
                 <div className="condition-cards">
                     <div className="condition-card">
-                        <p>Stress-Related Disorders</p>
-                        <ul>
-                            <li><img src={Check} alt="Check icon" />Generalized Anxiety Disorder (GAD)</li>
-                            <li><img src={Check} alt="Check icon" />Panic Disorder and Recurrent Attacks</li>
-                            <li><img src={Check} alt="Check icon" />Post-Traumatic Stress Disorder</li>
-                        </ul>
-                    </div>
-                    <div className="condition-card">
-                        <p>Behavioral Disorders</p>
-                        <ul>
-                            <li><img src={Check} alt="Check icon" />Obsessive-Compulsive Disorder (OCD)</li>
-                            <li><img src={Check} alt="Check icon" />Attention-Deficit/Hyperactivity Disorder (ADHD)</li>
-                            <li><img src={Check} alt="Check icon" />Adjustment Difficulties</li>
-                        </ul>
-                    </div>
-                    <div className="condition-card">
-                        <p>Emotional Disorders</p>
                         <ul>
                             <li><img src={Check} alt="Check icon" />Depression</li>
                             <li><img src={Check} alt="Check icon" />Bipolar Disorder</li>
                             <li><img src={Check} alt="Check icon" />Grief & Adjustment Disorders</li>
+                            <li><img src={Check} alt="Check icon" />Obsessive-Compulsive Disorder (OCD)</li>
+                            <li><img src={Check} alt="Check icon" />Attention-Deficit/Hyperactivity Disorder (ADHD)</li>
+                        </ul>
+                    </div>
+                    <div className="condition-card">
+                        <ul>
+                            <li><img src={Check} alt="Check icon" />Sleep Problems</li>
+                            <li><img src={Check} alt="Check icon" />Adjustment Disorder</li>
+                            <li><img src={Check} alt="Check icon" />Generalized Anxiety Disorder (GAD)</li>
+                            <li><img src={Check} alt="Check icon" />Panic Disorder and Recurrent Attacks</li>
+                            <li><img src={Check} alt="Check icon" />Post-Traumatic Stress Disorder</li>
                         </ul>
                     </div>
                 </div>

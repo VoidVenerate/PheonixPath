@@ -1,6 +1,6 @@
 import React from 'react'
 import './Info.css' 
-import profilepic from '../../assets/profile-pic.jpg'
+import profilepic from '../../assets/profile-pic.png'
 import Maskgroupgreen from '../../assets/Maskgroupgreen.png'
 import star from '../../assets/Star 1.png'
 import Maskgroup from '../../assets/Maskgroup.png'
