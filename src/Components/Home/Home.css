@@ -164,7 +164,7 @@
   }
 
   .main-text {
-    padding-left: 0;
+    padding-left: 24px;
     text-align: left;
     max-width: 450px;
   }
