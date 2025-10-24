@@ -2,7 +2,7 @@
     background: url(../../assets/bg.png) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  min-height: 70vh;
 }
 
 .home {
@@ -160,12 +160,13 @@
     flex-direction: column;
     text-align: left;
     justify-content: center;
+    align-items: flex-start;
   }
 
   .main-text {
     padding-left: 0;
-    text-align: center;
-    max-width: 600px;
+    text-align: left;
+    max-width: 450px;
   }
 
   .main-text .big-txt {
