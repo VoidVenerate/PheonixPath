@@ -248,6 +248,9 @@
 /* ================================== */
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .navbar-normal{
+    padding: 16px;
+  }
   .navbar-links-desktop { display: none; }
   .hamburger { display: flex; }
 }
