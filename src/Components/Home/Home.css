@@ -2,6 +2,7 @@
     background: url(../../assets/bg.png) no-repeat center center;
   background-size: cover;
   width: 100%;
+  height: ;
   min-height: 70vh;
 }
 
@@ -153,7 +154,7 @@
 /* Tablet screens (≤ 1024px) */
 @media (max-width: 1024px) {
     .home-container {
-    height: 512px;
+    height: 700px;
     width: 101%;
     }
   .home {
