@@ -5,15 +5,16 @@ import core from '../../assets/core.png';
 import Maskgroup from '../../assets/Maskgroup.png';
 import { ChevronsDown } from 'lucide-react';
 import { Link as ScrollLink } from 'react-scroll';
+import bg from '../../assets/bg.png'
 
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
 
   return (
     <div className='home-container' id='home-section'>
+      <img src={bg} className='bg-image' alt="" />
       {/* Navbar at the top */}
       <Navbar />
-
       <div 
         className="home" 
         onMouseEnter={() => setShowButton(true)} 
