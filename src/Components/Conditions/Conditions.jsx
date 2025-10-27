@@ -17,7 +17,7 @@ const Conditions = () => {
                             <li><img src={Check} alt="Check icon" />Bipolar Disorder</li>
                             <li><img src={Check} alt="Check icon" />Grief & Adjustment Disorders</li>
                             <li><img src={Check} alt="Check icon" />Obsessive-Compulsive Disorder (OCD)</li>
-                            <li><img src={Check} alt="Check icon" />Sleep Problems</li>
+                            <li><img src={Check} alt="Check icon" />Sleep Disorder</li>
                             <li><img src={Check} alt="Check icon" />Adjustment Disorder</li>
                             <li><img src={Check} alt="Check icon" />Generalized Anxiety Disorder (GAD)</li>
                             <li><img src={Check} alt="Check icon" />Panic Disorder and Recurrent Attacks</li>
