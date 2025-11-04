@@ -18,7 +18,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-card-text">
                     <p>Chat to support</p>
-                    <p>We’re here to help.</p>
+                    <p>We are here to help.</p>
                     <a
                         href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
                         target="_blank"
