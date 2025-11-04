@@ -6,6 +6,7 @@
   color: #00373E;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -75,7 +76,20 @@
 .info-btn:hover {
   transform: scale(1.1);
 }
-
+.consultation-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #F9FAFB;
+  width: 100%;
+  border-radius: 16px;
+  padding-bottom: 40px;
+  padding-top: 32px;
+}
+.consultation-footer img {
+  width: 128px;
+}
 
 /* Button styling */
 .consultation-btn {
