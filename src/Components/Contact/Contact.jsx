@@ -37,6 +37,16 @@ const Contact = () => {
                     <a href={`tel:${phoneNumber}`} className="btn phone-btn">{phoneNumber}</a>
                 </div>
             </div>
+             <div className="contact-card">
+                <div className="contact-wrapper">
+                    <img src={phone} alt="phone icon" className="contact-img" />
+                </div>
+                <div className="contact-card-text">
+                    <p>Call us</p>
+                    <p>Sat-Sun from 10am to 3pm.</p>
+                    <a href={`tel:${phoneNumber}`} className="btn phone-btn">{phoneNumber}</a>
+                </div>
+            </div>
         </div>
         <button><a href="https://care.headway.co/providers/oluwakemi-okunlola?utm_source=pem&utm_medium=direct_link&utm_campaign=168640" target="_blank" rel="noopener noreferrer">Book Your Telehealth Session</a></button>
     </div>

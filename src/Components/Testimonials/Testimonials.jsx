@@ -1,9 +1,6 @@
 import React from 'react'
 import './Testimonials.css'
 import quote from '../../assets/fe_quote-left.png'
-import image from '../../assets/Image.png'
-import image2 from '../../assets/Image (1).png'
-import image3 from '../../assets/Image (2).png'
 
 const Testimonials = () => {
   return (
