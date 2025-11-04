@@ -17,10 +17,8 @@ const Testimonials = () => {
                     <p>The team is incredibly warm and welcoming. I never felt judged, only supported. Couples therapy here helped us communicate in ways we never thought possible.</p>
                 </div>
                 <div className="Testimonial-card-footer">
-                    <img src={image} alt="Client" />
                     <div className="client-info">
                         <h3>Emily R</h3>
-                        <p>Banker at National Bank</p>
                     </div>
                 </div>
             </div>
@@ -30,10 +28,8 @@ const Testimonials = () => {
                     <p>I was unsure about telepsychiatry, but my sessions are transformative. It feels like I'm with someone who truly understands me, and the flexibility keeps me consistent with appointments.</p>
                 </div>
                 <div className="Testimonial-card-footer">
-                    <img src={image2} alt="Client" />
                     <div className="client-info">
                         <h3>Daniel M.</h3>
-                        <p>Working Professional</p>
                     </div>
                 </div>
             </div>
@@ -43,10 +39,8 @@ const Testimonials = () => {
                     <p>I arrived feeling overwhelmed and disconnected. Gradually, through therapy and medication, I began sleeping better, thinking more clearly, and feeling hopeful. I truly feel like myself again.</p>
                 </div>
                 <div className="Testimonial-card-footer">
-                    <img src={image3} alt="Client" />
                     <div className="client-info">
                         <h3>Maria J.</h3>
-                        <p>Healthcare Worker</p>
                     </div>
                 </div>
             </div>
