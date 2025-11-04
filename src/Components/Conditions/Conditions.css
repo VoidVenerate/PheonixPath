@@ -2,85 +2,83 @@
   width: 100%;
   min-height: 76vh;
   padding: 44px 96px 24px 96px;
-  gap: 2rem;
-  background-color: #006D771A;
+  background-color: #ffffff;
   color: #00373E;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
-}
 
-/* Top content: left + right side */
-.conditions-content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Left Section */
-.conditions-left {
-  flex: 1;
-  min-width: 300px;
+.conditions-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
-.conditions-left h1 {
+.conditions-content h1 {
   font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.conditions-content p {
+  font-size: 1rem;
+  line-height: 1.6;
   margin-bottom: 2rem;
+  max-width: 650px;
 }
 
-/* Changed from grid to flex */
-.condition-cards {
+.condition-header{
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  justify-content: space-between;
 }
 
-/* This part keeps your list clean and styled */
-.condition-card {
-  flex: 1 1 100%; /* by default takes full width — adjust below in media query */
-}
-
-.condition-card ul {
+.condition-cards ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.condition-card li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
+.condition-cards li {
+  font-size: 1rem;
+  margin-bottom: 32px;
   text-align: left;
-  padding-top: 8px;
+}
+.condition-cards li img {
+  width: 16px;
+  height: 16px;
+}
+.info-text {
+  margin-top: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 14px;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.condition-card li img {
-  width: 18px;
-  height: 18px;
-  margin-right: 0.5rem;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Right Section */
-.conditions-right {
-  flex: 1;
-  min-width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.info-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: #98A2B3;
 }
 
-.conditions-right img {
-  max-width: 100%;
-  height: 445px;
+.info-btn:hover {
+  transform: scale(1.1);
 }
+
 
 /* Button styling */
-.conditions button {
+.consultation-btn {
   background-color: #006D77;
   color: white;
   font-size: 1rem;
@@ -89,59 +87,29 @@
   border-radius: 8px;
   cursor: pointer;
   margin-top: 2rem;
-
-  /* Center it under everything */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center; /* works with flex parent */
-  text-align: center;
-
   transition: background-color 0.3s ease;
 }
 
-.conditions button a {
+.consultation-btn a {
   color: #fff;
   text-decoration: none;
 }
 
-.conditions button:hover {
+.consultation-btn:hover {
   background-color: #005f63;
 }
 
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
+/* Responsive */
+@media (max-width: 768px) {
   .conditions {
     padding: 24px;
-    width: 101%;
   }
 
-  .conditions-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .conditions-content h1 {
+    font-size: 1.8rem;
   }
 
-  .conditions-left h1 {
-    font-size: 24px;
-  }
-
-  .condition-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .conditions-right img {
-    margin-top: 2rem;
-    border-radius: 30px;
-    height: 576px;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 768px) {
-  .condition-card {
-    flex: 1 1 100%;
+  .conditions-content p {
+    font-size: 0.95rem;
   }
 }
