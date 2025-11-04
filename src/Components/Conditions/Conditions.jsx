@@ -6,39 +6,39 @@ import { CirclePlus, CircleMinus } from 'lucide-react'
 const conditionsData = [
   {
     title: "Attention-Deficit/Hyperactivity Disorder (ADHD)",
-    info: "ADHD affects focus, impulse control, and activity levels. Treatment often combines therapy, lifestyle adjustments, and sometimes medication."
+    info: "ADHD affects how a person focuses, stays organized, and controls impulses. People with ADHD may find it hard to pay attention, sit still, or finish tasks."
   },
   {
     title: "Depression",
-    info: "A mood disorder causing persistent sadness, loss of interest, and fatigue. Therapy and self-care routines play key roles in recovery."
+    info: "Depression makes a person feel very sad, empty, or hopeless for a long time. It can affect sleep, appetite, energy, and interest in things once enjoyed."
   },
   {
     title: "Bipolar Disorder",
-    info: "Characterized by mood swings between highs (mania) and lows (depression). Consistent treatment helps manage these emotional shifts."
+    info: "Bipolar disorder causes strong mood changes. A person may have periods of feeling very energetic and excited (mania) and times of deep sadness or tiredness (depression)."
   },
   {
     title: "Grief & Adjustment Disorders",
-    info: "Emotional responses to major life changes or losses. Therapy supports healthy coping and resilience through transitions."
+    info: "These happen when a person has trouble coping with a major life change or loss, such as losing a loved one, moving, or changing jobs. It can lead to sadness, worry, or feeling stuck."
   },
   {
     title: "Obsessive-Compulsive Disorder (OCD)",
-    info: "Involves unwanted repetitive thoughts and behaviors. Treatment focuses on exposure therapy and mindfulness strategies."
+    info: "OCD makes people have unwanted thoughts that cause worry (obsessions) and repeated actions or routines (compulsions) they feel forced to do to reduce anxiety."
   },
   {
     title: "Sleep Disorder",
-    info: "Disturbances in sleep patterns that affect energy, mood, and concentration. Behavioral therapy and routine adjustments often help."
+    info: "This includes trouble falling asleep, staying asleep, or sleeping too much. Poor sleep can affect mood, focus, and overall health."
   },
   {
     title: "Generalized Anxiety Disorder (GAD)",
-    info: "Chronic worry and tension about everyday events. Treatment focuses on relaxation, therapy, and balanced routines."
+    info: "People with GAD often worry a lot, even about everyday things. They may feel tense, restless, tired, or have trouble concentrating and sleeping."
   },
   {
     title: "Panic Disorder and Recurrent Attacks",
-    info: "Sudden intense fear or discomfort, often accompanied by physical symptoms. Learning grounding techniques can be life-changing."
+    info: "This causes sudden, intense fear or panic that comes without warning. During an attack, a person may feel their heart racing, have trouble breathing, or feel like something bad will happen."
   },
   {
     title: "Post-Traumatic Stress Disorder",
-    info: "Develops after trauma, leading to flashbacks and hypervigilance. Therapy helps rebuild safety and control."
+    info: "PTSD can develop after a scary or painful event. It can cause flashbacks, nightmares, and strong emotions that make it hard to feel safe or relaxed."
   }
 ];
 
@@ -65,7 +65,7 @@ const Conditions = () => {
                 <div className="condition-header">
                   <div className="condition-title">
                     <img src={check} alt="check" />
-                    <span style={{fontWeight:"600"}}>{condition.title}</span>
+                    <span style={{fontWeight:"600", marginLeft:"8px"}}>{condition.title}</span>
                   </div>
 
                   <button className="info-btn" onClick={() => toggleInfo(index)}>
